@@ -24,14 +24,14 @@ Unlike many juniors who only know how to run tools, my background in **infrastru
 
 ### ./Certifications
 **CompTIA**
-[![CompTIA PenTest+](https://img.shields.io/badge/CompTIA-PenTest+-FF0000?style=for-the-badge)](https://www.credly.com/badges/7795d30e-7866-4e20-90b9-2436b06354ea/public_url)
-[![CompTIA Security+](https://img.shields.io/badge/CompTIA-Security+-FF0000?style=for-the-badge)](https://www.credly.com/badges/794a9032-0e1f-4b3b-8a33-739bf8eaeb0c/public_url)
-[![CompTIA Network+](https://img.shields.io/badge/CompTIA-Network+-0077C8?style=for-the-badge)](https://www.credly.com/badges/51f607b1-440b-43fd-8f82-47eb07de5e8a/public_url)
-[![CompTIA A+](https://img.shields.io/badge/CompTIA-A+-0077C8?style=for-the-badge)](https://www.credly.com/badges/71494342-7ae1-44c3-8d5f-a41543060868)
+[![CompTIA PenTest+](https://img.shields.io/badge/CompTIA-PenTest+-FF0000?style=for-the-badge)](https://www.credly.com/badges/71494342-7ae1-44c3-8d5f-a41543060868)
+[![CompTIA Security+](https://img.shields.io/badge/CompTIA-Security+-FF0000?style=for-the-badge)](https://www.credly.com/badges/bdfa7897-7892-4dfd-b29f-f9c12498f058/public_url)
+[![CompTIA Network+](https://img.shields.io/badge/CompTIA-Network+-0077C8?style=for-the-badge)](https://www.credly.com/badges/794a9032-0e1f-4b3b-8a33-739bf8eaeb0c/public_url)
+[![CompTIA A+](https://img.shields.io/badge/CompTIA-A+-0077C8?style=for-the-badge)](https://www.credly.com/badges/51f607b1-440b-43fd-8f82-47eb07de5e8a/public_url)
 
 **Microsoft**
-![Azure Fundamentals](https://img.shields.io/badge/Microsoft-Azure_Fund_(AZ--900)-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![SC-900](https://img.shields.io/badge/Microsoft-Security_Fund_(SC--900)-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+[![Azure Fundamentals](https://img.shields.io/badge/Microsoft-Azure_Fund_(AZ--900)-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)](https://www.credly.com/badges/b05ff049-5b67-4d36-95e6-f2108c0eecd6/public_url)
+[![SC-900](https://img.shields.io/badge/Microsoft-Security_Fund_(SC--900)-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)](https://www.credly.com/badges/7795d30e-7866-4e20-90b9-2436b06354ea/public_url)
 
 ---
 
