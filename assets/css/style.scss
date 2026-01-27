@@ -1,0 +1,43 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* --- 1. CRT Monitor Green Glow --- */
+body {
+  text-shadow: 0 0 4px #00ff00; /* Adds a blurry glow to all text */
+}
+
+/* --- 2. Custom "Hacker" Scrollbar --- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #111; 
+}
+::-webkit-scrollbar-thumb {
+  background: #00ff00; 
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00cc00; 
+}
+
+/* --- 3. Blinking Cursor Animation --- */
+/* This makes the "root@" text blink slightly like a cursor */
+.blinking-cursor {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* --- 4. Badge Hover Effect --- */
+img[src*="shields.io"]:hover, img[src*="hackthebox"]:hover, img[src*="tryhackme"]:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
