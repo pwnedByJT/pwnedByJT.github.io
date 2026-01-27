@@ -13,7 +13,7 @@ title: Home
 
 ---
 
-<span style="color: #00ff00;">root@pwnedByJT:~$</span> ./whoami.py
+<span style="color: #00ff00;">root@pwnedByJT:~$</span> ./whoami.py<span class="blinking-cursor">_</span>
 <span style="color: #aaaaaa;">> Loading user profile...</span>
 <br>
 I am a **Systems Administrator at Walmart** and a Computer Science student at SNHU (Class of '26), currently transitioning into full-time Offensive Security. 
@@ -23,22 +23,26 @@ Unlike many juniors who only know how to run tools, my background in **infrastru
 ---
 
 ### ./Certifications
-**CompTIA** ![CompTIA PenTest+](https://img.shields.io/badge/CompTIA-PenTest+-FF0000?style=for-the-badge)
+**CompTIA**
+![CompTIA PenTest+](https://img.shields.io/badge/CompTIA-PenTest+-FF0000?style=for-the-badge)
 ![CompTIA Security+](https://img.shields.io/badge/CompTIA-Security+-FF0000?style=for-the-badge)
 ![CompTIA Network+](https://img.shields.io/badge/CompTIA-Network+-0077C8?style=for-the-badge)
 ![CompTIA A+](https://img.shields.io/badge/CompTIA-A+-0077C8?style=for-the-badge)
 
-**Microsoft** ![Azure Fundamentals](https://img.shields.io/badge/Microsoft-Azure_Fund_(AZ--900)-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+**Microsoft**
+![Azure Fundamentals](https://img.shields.io/badge/Microsoft-Azure_Fund_(AZ--900)-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
 ![SC-900](https://img.shields.io/badge/Microsoft-Security_Fund_(SC--900)-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
 
 ---
 
 ### ./Technical_Arsenal
-**Offensive Tools** ![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
+**Offensive Tools**
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
 ![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
 
-**Scripting & Automation** ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+**Scripting & Automation**
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
 
