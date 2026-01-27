@@ -60,5 +60,5 @@ Proof of work is better than promises.
 
 <br><br>
 <div align="center">
-  <img src="https://profile-counter.glitch.me/pwnedByJT/count.svg" alt="Visitor Count">
+  <img src="https://komarev.com/ghpvc/?username=pwnedByJT&label=PROFILE+VIEWS&style=flat-square&color=00ff00" alt="Visitor Count">
 </div>
