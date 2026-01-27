@@ -13,7 +13,9 @@ title: Home
 
 ---
 
-### ./System_Admin_turned_Pentester
+<span style="color: #00ff00;">root@pwnedByJT:~$</span> ./whoami.py
+<span style="color: #aaaaaa;">> Loading user profile...</span>
+<br>
 I am a **Systems Administrator at Walmart** and a Computer Science student at SNHU (Class of '26), currently transitioning into full-time Offensive Security. 
 
 Unlike many juniors who only know how to run tools, my background in **infrastructure management** means I understand the business impact of the systems I exploit. I don't just find the hole; I know how to patch it.
