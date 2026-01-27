@@ -16,32 +16,32 @@ title: Home
 <span style="color: #00ff00;">root@pwnedByJT:~$</span> ./whoami.py<span class="blinking-cursor">_</span><br>
 <span style="color: #aaaaaa;">> Loading user profile...</span>
 <br>
-I am a **Systems Administrator at Walmart** and a Computer Science student at SNHU (Class of '26), currently transitioning into full-time Offensive Security. 
+I am a Systems Administrator at Walmart and a Computer Science student at SNHU (Class of '26), currently transitioning into full-time Offensive Security. 
 
-Unlike many juniors who only know how to run tools, my background in **infrastructure management** means I understand the business impact of the systems I exploit. I don't just find the hole; I know how to patch it.
+Unlike many juniors who only know how to run tools, my background in infrastructure management means I understand the business impact of the systems I exploit. I don't just find the hole; I know how to patch it.
 
 ---
 
 ### ./Certifications
-**CompTIA**
+CompTIA
 [![CompTIA PenTest+](https://img.shields.io/badge/CompTIA-PenTest+-FF0000?style=for-the-badge)](https://www.credly.com/badges/71494342-7ae1-44c3-8d5f-a41543060868)
 [![CompTIA Security+](https://img.shields.io/badge/CompTIA-Security+-FF0000?style=for-the-badge)](https://www.credly.com/badges/bdfa7897-7892-4dfd-b29f-f9c12498f058/public_url)
 [![CompTIA Network+](https://img.shields.io/badge/CompTIA-Network+-0077C8?style=for-the-badge)](https://www.credly.com/badges/794a9032-0e1f-4b3b-8a33-739bf8eaeb0c/public_url)
 [![CompTIA A+](https://img.shields.io/badge/CompTIA-A+-0077C8?style=for-the-badge)](https://www.credly.com/badges/51f607b1-440b-43fd-8f82-47eb07de5e8a/public_url)
 
-**Microsoft**
+Microsoft
 [![Azure Fundamentals](https://img.shields.io/badge/Microsoft-Azure_Fund_(AZ--900)-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)](https://www.credly.com/badges/b05ff049-5b67-4d36-95e6-f2108c0eecd6/public_url)
 [![SC-900](https://img.shields.io/badge/Microsoft-Security_Fund_(SC--900)-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)](https://www.credly.com/badges/7795d30e-7866-4e20-90b9-2436b06354ea/public_url)
 
 ---
 
 ### ./Technical_Arsenal
-**Offensive Tools**
+Offensive Tools
 ![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
 ![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
 
-**Scripting & Automation**
+Scripting & Automation
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
