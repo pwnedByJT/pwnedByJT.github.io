@@ -1,102 +1,103 @@
 ---
 ---
 
-/* --- 1. Import Premium Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+/* --- 1. Import "JetBrains Mono" (The Pro Coding Font) --- */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 @import "{{ site.theme }}";
 
-/* --- 2. Global Cyber-Interface Variables --- */
+/* --- 2. "Tokyo Night" Cyber Warfare Palette --- */
 :root {
-  --bg-color: #050505;           /* Deep Black */
-  --text-color: #4af626;         /* Phosphor Green (Readable) */
-  --accent-color: #00f3ff;       /* Cyan (For Links/Highlights) */
-  --dim-color: #2c5e2e;          /* Dim Green (For borders) */
-  --scanline-color: rgba(0, 0, 0, 0.5);
+  --bg-color: #0f111a;           /* Deep Navy Black (Not pure black) */
+  --terminal-bg: #1a1b26;        /* Slightly lighter for code blocks */
+  --text-primary: #a9b1d6;       /* Soft Blue-Grey (Easy on eyes) */
+  --text-bright: #c0caf5;        /* Bright White-Blue for headers */
+  --accent-cyan: #7dcfff;        /* Neon Cyan */
+  --accent-purple: #bb9af7;      /* Neon Purple */
+  --accent-green: #9ece6a;       /* Muted Hacker Green */
+  --border-dim: #2f354b;         /* Subtle borders */
 }
 
-/* --- 3. Body & Typography --- */
+/* --- 3. Base Typography & Layout --- */
 body {
   background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: 'Share Tech Mono', monospace; /* The new Pro Font */
-  font-size: 18px; /* Slightly larger for readability */
-  letter-spacing: 0.5px;
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', monospace; /* Professional ligature font */
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 900px; /* Limits width for better readability */
+  margin: 0 auto;
+  padding: 20px;
   
-  /* The "Scanline" Background Effect */
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0) 50%,
-    var(--scanline-color) 50%,
-    var(--scanline-color)
-  );
-  background-size: 100% 4px; /* Creates the lines */
-  text-shadow: 0 0 2px rgba(74, 246, 38, 0.4); /* Subtle, sharp glow */
+  /* Subtle "Grid" Background pattern */
+  background-image: 
+    linear-gradient(var(--border-dim) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border-dim) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center top;
 }
 
-/* --- 4. Headers (Sharp & Clean) --- */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Share Tech Mono', monospace;
-  color: #fff; /* White headers for contrast */
+/* --- 4. Headers (The "Command Center" Look) --- */
+h1, h2, h3 {
+  color: var(--accent-cyan);
   text-transform: uppercase;
-  border-bottom: 1px solid var(--dim-color);
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  letter-spacing: 2px;
+  border-bottom: 2px solid var(--accent-purple);
+  padding-bottom: 10px;
+  margin-top: 40px;
+  text-shadow: 0 0 10px rgba(125, 207, 255, 0.3); /* Cyan Glow */
 }
 
-/* --- 5. Links (The "Cyan" Pop) --- */
+/* --- 5. Navigation Links (Top Bar) --- */
 a {
-  color: var(--accent-color);
+  color: var(--accent-purple);
   text-decoration: none;
-  transition: all 0.3s ease;
-  border-bottom: 1px dotted var(--accent-color);
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
 }
 a:hover {
-  color: #fff;
-  background-color: rgba(0, 243, 255, 0.1);
-  box-shadow: 0 0 10px var(--accent-color);
-  text-decoration: none;
+  color: var(--accent-cyan);
+  text-shadow: 0 0 8px var(--accent-cyan);
 }
 
-/* --- 6. Code & Terminal Blocks --- */
-code, pre {
-  font-family: 'Share Tech Mono', monospace;
-  color: #fff;
-  background-color: #111;
-  border: 1px solid var(--dim-color);
+/* --- 6. Code Blocks & Terminal Window Style --- */
+/* This makes your "root@pwned" section look like a real window */
+pre, code {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: var(--terminal-bg);
+  color: var(--accent-green);
+  border-radius: 6px;
+  padding: 2px 6px;
+  border: 1px solid var(--border-dim);
 }
 
-/* --- 7. Custom Scrollbar --- */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #000; 
-}
-::-webkit-scrollbar-thumb {
-  background: var(--dim-color); 
-  border: 1px solid var(--text-color);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--text-color); 
-}
-
-/* --- 8. Animation: Blinking Cursor --- */
-.blinking-cursor {
-  animation: blink 1s step-end infinite;
-  color: var(--text-color);
-  font-weight: bold;
-}
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-/* --- 9. Image Hover (Badges) --- */
+/* --- 7. Certifications & Badges (Clean Layout) --- */
+/* Adds spacing so badges aren't squished */
 img {
-  transition: transform 0.2s;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  transition: transform 0.2s ease;
+  border-radius: 4px; /* Slight rounded corners on badges */
 }
 img:hover {
-  transform: scale(1.05); /* Slight zoom on badges */
-  filter: brightness(1.2);
+  transform: translateY(-3px); /* Badges "jump" up when hovered */
+  box-shadow: 0 5px 15px rgba(125, 207, 255, 0.2);
 }
+
+/* --- 8. The Blinking Cursor (Kept for style) --- */
+.blinking-cursor {
+  color: var(--accent-cyan);
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* --- 9. Custom Scrollbar (Sleek Blue) --- */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--bg-color); }
+::-webkit-scrollbar-thumb { 
+  background: var(--border-dim); 
+  border-radius: 5px; 
+}
+::-webkit-scrollbar-thumb:hover { background: var(--accent-cyan); }
