@@ -13,7 +13,7 @@ title: Home
 
 ---
 
-<span style="color: #00ff00;">root@pwnedByJT:~$</span> ./whoami.py<span class="blinking-cursor">_</span>
+<span style="color: #00ff00;">root@pwnedByJT:~$</span> ./whoami.py<span class="blinking-cursor">_</span><br>
 <span style="color: #aaaaaa;">> Loading user profile...</span>
 <br>
 I am a **Systems Administrator at Walmart** and a Computer Science student at SNHU (Class of '26), currently transitioning into full-time Offensive Security. 
@@ -57,3 +57,8 @@ Proof of work is better than promises.
 
 [![TryHackMe](https://tryhackme-badges.s3.amazonaws.com/Justin.Turner.png)](https://tryhackme.com/p/Justin.Turner)
 [![Hack The Box](http://www.hackthebox.eu/badge/image/2203566)](https://app.hackthebox.com/profile/2203566)
+
+<br><br>
+<div align="center">
+  <img src="https://profile-counter.glitch.me/pwnedByJT/count.svg" alt="Visitor Count">
+</div>
