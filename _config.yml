@@ -1,0 +1,10 @@
+title: Justin Turner
+email: turneraaronjustin@gmail.com
+description: >-
+  System Administrator & Offensive Security Practitioner.
+baseurl: ""
+url: "https://pwnedbyjt.github.io"
+github_username: pwnedByJT
+theme: jekyll-theme-hacker
+plugins:
+  - jekyll-feed
