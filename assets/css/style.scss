@@ -7,10 +7,10 @@
 
 /* --- 2. "Tokyo Night" Cyber Warfare Palette --- */
 :root {
-  --bg-color: #0f111a;           /* Deep Navy Black (Not pure black) */
+  --bg-color: #0f111a;           /* Deep Navy Black */
   --terminal-bg: #1a1b26;        /* Slightly lighter for code blocks */
-  --text-primary: #a9b1d6;       /* Soft Blue-Grey (Easy on eyes) */
-  --text-bright: #c0caf5;        /* Bright White-Blue for headers */
+  --text-primary: #a9b1d6;       /* Soft Blue-Grey */
+  --text-bright: #c0caf5;        /* Bright White-Blue */
   --accent-cyan: #7dcfff;        /* Neon Cyan */
   --accent-purple: #bb9af7;      /* Neon Purple */
   --accent-green: #9ece6a;       /* Muted Hacker Green */
@@ -21,10 +21,10 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-primary);
-  font-family: 'JetBrains Mono', monospace; /* Professional ligature font */
+  font-family: 'JetBrains Mono', monospace;
   font-size: 16px;
   line-height: 1.6;
-  max-width: 900px; /* Limits width for better readability */
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
   
@@ -37,14 +37,15 @@ body {
 }
 
 /* --- 4. Headers (The "Command Center" Look) --- */
-h1, h2, h3 {
-  color: var(--accent-cyan);
+/* Added !important to force the color change over the default theme */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--accent-cyan) !important;
   text-transform: uppercase;
   letter-spacing: 2px;
   border-bottom: 2px solid var(--accent-purple);
   padding-bottom: 10px;
   margin-top: 40px;
-  text-shadow: 0 0 10px rgba(125, 207, 255, 0.3); /* Cyan Glow */
+  text-shadow: 0 0 10px rgba(125, 207, 255, 0.3);
 }
 
 /* --- 5. Navigation Links (Top Bar) --- */
@@ -60,7 +61,6 @@ a:hover {
 }
 
 /* --- 6. Code Blocks & Terminal Window Style --- */
-/* This makes your "root@pwned" section look like a real window */
 pre, code {
   font-family: 'JetBrains Mono', monospace;
   background-color: var(--terminal-bg);
@@ -71,19 +71,18 @@ pre, code {
 }
 
 /* --- 7. Certifications & Badges (Clean Layout) --- */
-/* Adds spacing so badges aren't squished */
 img {
   margin-right: 5px;
   margin-bottom: 5px;
   transition: transform 0.2s ease;
-  border-radius: 4px; /* Slight rounded corners on badges */
+  border-radius: 4px;
 }
 img:hover {
-  transform: translateY(-3px); /* Badges "jump" up when hovered */
+  transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(125, 207, 255, 0.2);
 }
 
-/* --- 8. The Blinking Cursor (Kept for style) --- */
+/* --- 8. The Blinking Cursor --- */
 .blinking-cursor {
   color: var(--accent-cyan);
   animation: blink 1s step-end infinite;
@@ -93,7 +92,7 @@ img:hover {
   50% { opacity: 0; }
 }
 
-/* --- 9. Custom Scrollbar (Sleek Blue) --- */
+/* --- 9. Custom Scrollbar --- */
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: var(--bg-color); }
 ::-webkit-scrollbar-thumb { 
