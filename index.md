@@ -19,7 +19,7 @@ title: Home
     &nbsp; <span style="color: #565f89; font-size: 12px;">bash — 80x24</span>
   </div>
   
-  <span style="color: #bb9af7;">root@pwnedByJT</span>:<span style="color: #7dcfff;">~</span>$ <span data-sys-id="PWNED{H7ML_S0urc3_C0d3_M4st3r}">whoami</span><span class="blinking-cursor">_</span><br><br>
+  <span style="color: #bb9af7;">root@pwnedByJT</span>:<span style="color: #7dcfff;">~</span>$ <span data-sys-id="PWNED{H7ML_S0urc3_C0d3_M4st3r}" data-trigger="unlock()">whoami</span><span class="blinking-cursor">_</span><br><br>
   
   <span style="color: #9ece6a;">> [SUCCESS] Loading user profile...</span><br>
   <span style="color: #a9b1d6;">
@@ -52,7 +52,7 @@ title: Home
 **Automation**<br>
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
+![Bash](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
 
 <br>
 
@@ -67,20 +67,19 @@ title: Home
 [![Hack The Box](https://www.hackthebox.eu/badge/image/2203566)](https://app.hackthebox.com/profile/2203566)
 
 <script>
-  // 1. Initial Console Hint
-  console.log("%c⚠️ ROOT ACCESS PROTOCOL INITIATED ⚠️", "font-size: 20px; color: #ff5f56; font-weight: bold;");
-  console.log("%cType unlock() to authenticate.", "color: #7dcfff; font-style: italic; font-size: 14px;");
+  // 1. SILENT MODE: No instructions printed.
+  // The user must find the function "unlock()" by inspecting the HTML code above.
+  
+  console.log("%c[+] SYSTEM READY. DEBUGGING PORT OPEN.", "color: #27c93f; font-family: monospace; font-size: 12px;");
 
-  // 2. The Unlock Function (Triggered by typing unlock() in console)
   window.unlock = function() {
-    // This opens a safe input box so the user doesn't get syntax errors
     let attempt = prompt("Please enter the system flag:");
     
-    // Check against the hidden flag
     if (attempt === 'PWNED{H7ML_S0urc3_C0d3_M4st3r}') {
       
-      // SUCCESS: Fire Confetti!
-      var duration = 3 * 1000;
+      // CONFETTI LOGIC
+      // Changed duration from 3 seconds to 15 seconds
+      var duration = 15 * 1000;
       var animationEnd = Date.now() + duration;
       var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
 
@@ -96,9 +95,8 @@ title: Home
 
       function randomInRange(min, max) { return Math.random() * (max - min) + min; }
 
-      // Success Message
       alert("🎉 ACCESS GRANTED! \n\nYou absolute legend. I'd give you root access, but... actually, no I won't. \n\nEnjoy the confetti though!");
-      console.log("%c[+] SYSTEM UNLOCKED. CONGRATULATIONS.", "color: #00ff00; font-weight: bold; font-size: 16px;");
+      console.log("%c[+] SYSTEM UNLOCKED.", "color: #00ff00; font-weight: bold;");
       
     } else {
       alert("🚫 ACCESS DENIED \n\nNice try, script kiddie.");
