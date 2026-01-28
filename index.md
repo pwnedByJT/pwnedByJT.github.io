@@ -59,4 +59,7 @@ title: Home
 [![GitHub](https://img.shields.io/badge/GitHub-View_Code-181717?style=for-the-badge&logo=github)](https://github.com/pwnedByJT)
 [![Resume](https://img.shields.io/badge/Resume-Download_PDF-FF0000?style=for-the-badge&logo=adobeacrobatreader)](/Justin_Turner_Resume.pdf)
 
+<br><br>
+
 [![TryHackMe](https://tryhackme-badges.s3.amazonaws.com/Justin.Turner.png)](https://tryhackme.com/p/Justin.Turner)
+[![Hack The Box](http://www.hackthebox.eu/badge/image/2203566)](https://app.hackthebox.com/profile/2203566)
