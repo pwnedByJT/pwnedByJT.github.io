@@ -1,0 +1,137 @@
+---
+layout: default
+title: System Control Panel
+---
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+<div align="center" style="margin-bottom: 30px;">
+  <span style="color: #ff5f56; font-size: 2em;">⚠️ RESTRICTED AREA ⚠️</span>
+</div>
+
+<div style="background: #1a1b26; border: 2px solid #ff5f56; border-radius: 8px; padding: 20px; box-shadow: 0 0 30px rgba(255,95,86,0.3);">
+  <div style="margin-bottom: 10px;">
+    <span style="color: #ff5f56;">●</span> 
+    <span style="color: #ffbd2e;">●</span> 
+    <span style="color: #27c93f;">●</span>
+    &nbsp; <span style="color: #565f89; font-size: 12px;">root@control-panel — ELEVATED SESSION</span>
+  </div>
+  
+  <span style="color: #bb9af7;">root@pwnedByJT</span>:<span style="color: #7dcfff;">~/admin</span>$ sudo -l<br><br>
+  
+  <span style="color: #9ece6a;">[SUCCESS] Authentication Bypassed</span><br>
+  <span style="color: #a9b1d6;">User <b>GUEST</b> may run the following commands on this host:</span><br>
+  <span style="color: #565f89;">&nbsp;&nbsp;&nbsp;&nbsp;(ALL) NOPASSWD: ALL</span>
+</div>
+
+<br>
+
+### [ SYSTEM :: DASHBOARD ]
+
+<div style="background: #0f111a; border-left: 4px solid #9ece6a; padding: 15px; margin-bottom: 20px;">
+  <span style="color: #9ece6a; font-weight: bold;">✓ FLAG CAPTURED</span><br>
+  <code style="background: #1a1b26; color: #ff5f56; padding: 5px 10px; border-radius: 4px; font-size: 1.1em;">
+    PWNED{3num3r4t10n_1s_K3y}
+  </code>
+  <br><br>
+  <span style="color: #a9b1d6;">
+  Excellent work. You found the hidden endpoint through source analysis or directory enumeration.<br>
+  This demonstrates a critical skill: <b>forced browsing</b> and <b>content discovery</b>.
+  </span>
+</div>
+
+<div style="background: #0f111a; border-left: 4px solid #7dcfff; padding: 15px; margin-bottom: 20px;">
+  <h4 style="margin-top: 0; color: #7dcfff;">[ ACTIVE SESSIONS ]</h4>
+  <table style="width: 100%; color: #a9b1d6; font-family: monospace;">
+    <tr style="color: #565f89;">
+      <th style="text-align: left;">USER</th>
+      <th style="text-align: left;">IP ADDRESS</th>
+      <th style="text-align: left;">PRIVILEGE</th>
+      <th style="text-align: left;">STATUS</th>
+    </tr>
+    <tr>
+      <td>root</td>
+      <td>127.0.0.1</td>
+      <td style="color: #ff5f56;">SUPERUSER</td>
+      <td style="color: #9ece6a;">ACTIVE</td>
+    </tr>
+    <tr>
+      <td>pwned_admin</td>
+      <td>192.168.1.100</td>
+      <td style="color: #ffbd2e;">ADMIN</td>
+      <td style="color: #9ece6a;">ACTIVE</td>
+    </tr>
+    <tr style="background: #1a1b26;">
+      <td><b>YOU</b></td>
+      <td>EXTERNAL</td>
+      <td style="color: #bb9af7;">UNAUTHORIZED</td>
+      <td style="color: #ff5f56;">⚠ COMPROMISED</td>
+    </tr>
+  </table>
+</div>
+
+<div style="background: #0f111a; border-left: 4px solid #bb9af7; padding: 15px; margin-bottom: 20px;">
+  <h4 style="margin-top: 0; color: #bb9af7;">[ SECURITY LOGS ]</h4>
+  <pre style="color: #565f89; font-size: 0.9em; margin: 0;">
+[2026-01-28 10:47:32] INFO: User 'guest' attempted privilege escalation
+[2026-01-28 10:47:35] WARN: localStorage manipulation detected
+[2026-01-28 10:47:41] ALERT: Unauthorized access to /admin.html
+[2026-01-28 10:47:41] CRITICAL: <span style="color: #ff5f56;">INTRUSION DETECTED - Security controls bypassed</span>
+[2026-01-28 10:47:42] INFO: <span style="color: #9ece6a;">Admin access granted to attacker. Game over.</span>
+  </pre>
+</div>
+
+<div align="center" style="margin-top: 40px;">
+  <a href="/" style="border: 2px solid #ff5f56; padding: 10px 20px; border-radius: 4px; color: #ff5f56; text-decoration: none;">
+    [ RETURN TO HOME ]
+  </a>
+</div>
+
+<script>
+// Confetti celebration for finding the secret page
+(function(){
+  console.log("%c[+] ADMIN PANEL ACCESSED", "color:#f00;font-weight:bold;font-size:16px;");
+  console.log("%cYou've demonstrated strong enumeration skills.", "color:#0f0;");
+  
+  // Instant confetti burst
+  confetti({
+    particleCount: 150,
+    spread: 180,
+    origin: { y: 0.6 },
+    colors: ['#ff5f56', '#ffbd2e', '#27c93f', '#7dcfff', '#bb9af7']
+  });
+  
+  // Extended celebration
+  let duration = 10 * 1000;
+  let end = Date.now() + duration;
+  
+  (function frame() {
+    confetti({
+      particleCount: 3,
+      angle: 60,
+      spread: 55,
+      origin: { x: 0 },
+      colors: ['#ff5f56', '#bb9af7']
+    });
+    confetti({
+      particleCount: 3,
+      angle: 120,
+      spread: 55,
+      origin: { x: 1 },
+      colors: ['#7dcfff', '#9ece6a']
+    });
+    
+    if (Date.now() < end) {
+      requestAnimationFrame(frame);
+    }
+  }());
+  
+  // Secret message
+  setTimeout(function() {
+    console.log("%c╔══════════════════════════════════════════╗", "color:#0ff;");
+    console.log("%c║  Security Through Obscurity = Failed   ║", "color:#0ff;");
+    console.log("%c║  Proper Auth & Access Control = Win    ║", "color:#0ff;");
+    console.log("%c╚══════════════════════════════════════════╝", "color:#0ff;");
+  }, 1500);
+})();
+</script>

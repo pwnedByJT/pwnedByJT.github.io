@@ -3,6 +3,9 @@ layout: default
 title: Home
 ---
 
+<!-- TODO: Remove test endpoints before production deployment -->
+<!-- DEBUG: /admin.html should be restricted to internal network only -->
+
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
 <div align="center" style="margin-bottom: 40px;">

@@ -1,0 +1,10 @@
+# Restrict crawlers from sensitive areas
+User-agent: *
+Disallow: /admin.html
+Disallow: /.git/
+Disallow: /config/
+
+# Public areas
+Allow: /
+Allow: /projects/
+Allow: /writeups/
