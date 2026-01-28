@@ -1,6 +1,7 @@
 ---
 layout: default
 title: CTF Writeups
+permalink: /writeups/
 ---
 
 <div align="center" style="margin-bottom: 40px;">

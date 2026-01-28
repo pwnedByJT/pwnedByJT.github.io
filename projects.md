@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Operations & Code
+permalink: /projects/
 ---
 
 <div align="center" style="margin-bottom: 40px;">
