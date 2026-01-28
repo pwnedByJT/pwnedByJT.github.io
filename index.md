@@ -63,3 +63,11 @@ title: Home
 
 [![TryHackMe](https://tryhackme-badges.s3.amazonaws.com/Justin.Turner.png)](https://tryhackme.com/p/Justin.Turner)
 [![Hack The Box](http://www.hackthebox.eu/badge/image/2203566)](https://app.hackthebox.com/profile/2203566)
+
+<script>
+  // This message only appears in the "Console" tab of the browser (F12)
+  console.log("%c⚠️ SYSTEM WARNING ⚠️", "font-size: 24px; color: #ff5f56; font-weight: bold;");
+  console.log("%cAccessing restricted memory...", "color: #a9b1d6; font-family: monospace;");
+  console.log("%c[+] CONSOLE FLAG FOUND: PWNED{D3v_T00ls_H4ck3r_2026}", "color: #00ff00; font-family: monospace; font-weight: bold; font-size: 16px;");
+  console.log("%cGood luck with the enumeration.", "color: #7dcfff; font-style: italic;");
+</script>
