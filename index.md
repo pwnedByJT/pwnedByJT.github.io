@@ -92,5 +92,34 @@ title: Home
       alert("🚫 ACCESS DENIED");
     }
   };
+  
+  // User session handler - DO NOT modify client-side values
+  function initSession() {
+    if (!localStorage.getItem('userRole')) {
+      localStorage.setItem('userRole', 'guest');
+      localStorage.setItem('uid', Math.floor(Math.random() * 9000) + 1000);
+      localStorage.setItem('clearance', '1');
+    }
+  }
+  
+  // Check for restricted content access
+  window.viewRestricted = function() {
+    let role = localStorage.getItem('userRole');
+    let lvl = parseInt(localStorage.getItem('clearance'));
+    
+    if (role === 'admin' && lvl >= 5) {
+      console.log("%c[SYSTEM] Access Level: ADMINISTRATOR", "color:#ff0;font-weight:bold;");
+      console.log("%c[SYSTEM] Clearance Level: " + lvl, "color:#ff0;");
+      alert("🔓 RESTRICTED AREA UNLOCKED\n\nFlag: PWNED{Cl13nt_S1d3_L0g1c_F41l}\n\nNice work. Never trust the client.");
+      return true;
+    } else {
+      console.warn("[!] Insufficient privileges. Current role: " + role);
+      alert("⚠️ ACCESS RESTRICTED\n\nYou need ADMIN privileges.\nCurrent Role: " + role);
+      return false;
+    }
+  };
+  
+  initSession();
+  console.log("%c[INFO] Session initialized. Type viewRestricted() to access classified data.", "color:#0ff;");
 })();
 </script>
