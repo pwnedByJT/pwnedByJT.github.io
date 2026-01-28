@@ -17,7 +17,7 @@ title: Home
     &nbsp; <span style="color: #565f89; font-size: 12px;">bash — 80x24</span>
   </div>
   
-  <span style="color: #bb9af7;">root@pwnedByJT</span>:<span style="color: #7dcfff;">~</span>$ ./whoami.py<span class="blinking-cursor">_</span><br><br>
+  <span style="color: #bb9af7;">root@pwnedByJT</span>:<span style="color: #7dcfff;">~</span>$ whoami<span class="blinking-cursor">_</span><br><br>
   
   <span style="color: #9ece6a;">> [SUCCESS] Loading user profile...</span><br>
   <span style="color: #a9b1d6;">
@@ -60,8 +60,3 @@ title: Home
 [![Resume](https://img.shields.io/badge/Resume-Download_PDF-FF0000?style=for-the-badge&logo=adobeacrobatreader)](/Justin_Turner_Resume.pdf)
 
 [![TryHackMe](https://tryhackme-badges.s3.amazonaws.com/Justin.Turner.png)](https://tryhackme.com/p/Justin.Turner)
-
-<br>
-<div align="center" style="opacity: 0.7;">
-  <img src="https://komarev.com/ghpvc/?username=pwnedByJT&label=SYSTEM+ACCESS&style=flat-square&color=7aa2f7" alt="Visitor Count">
-</div>
