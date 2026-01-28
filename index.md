@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
 <div align="center" style="margin-bottom: 40px;">
   <code><a href="/">~/HOME</a></code> &nbsp;&mdash;&nbsp;
   <code><a href="/projects/">~/OPS_&_CODE</a></code> &nbsp;&mdash;&nbsp;
@@ -17,7 +19,7 @@ title: Home
     &nbsp; <span style="color: #565f89; font-size: 12px;">bash — 80x24</span>
   </div>
   
-  <span style="color: #bb9af7;">root@pwnedByJT</span>:<span style="color: #7dcfff;">~</span>$ whoami<span class="blinking-cursor">_</span><br><br>
+  <span style="color: #bb9af7;">root@pwnedByJT</span>:<span style="color: #7dcfff;">~</span>$ <span data-sys-id="PWNED{H7ML_S0urc3_C0d3_M4st3r}">whoami</span><span class="blinking-cursor">_</span><br><br>
   
   <span style="color: #9ece6a;">> [SUCCESS] Loading user profile...</span><br>
   <span style="color: #a9b1d6;">
@@ -62,43 +64,44 @@ title: Home
 <br><br>
 
 [![TryHackMe](https://tryhackme-badges.s3.amazonaws.com/Justin.Turner.png)](https://tryhackme.com/p/Justin.Turner)
-[![Hack The Box](http://www.hackthebox.eu/badge/image/2203566)](https://app.hackthebox.com/profile/2203566)
+[![Hack The Box](https://www.hackthebox.eu/badge/image/2203566)](https://app.hackthebox.com/profile/2203566)
 
 <script>
-  // 1. Display the "Hacker" warnings in the console
-  console.log("%c⚠️ SYSTEM WARNING ⚠️", "font-size: 24px; color: #ff5f56; font-weight: bold;");
-  console.log("%cAccessing restricted memory...", "color: #a9b1d6; font-family: monospace;");
-  console.log("%c[+] CONSOLE FLAG FOUND: PWNED{D3v_T00ls_H4ck3r_2026}", "color: #00ff00; font-family: monospace; font-weight: bold; font-size: 16px;");
-  console.log("%c[?] CHALLENGE: Use function enterFlag('YOUR_FLAG') to unlock the system.", "color: #7dcfff; font-style: italic;");
+  // 1. Initial Console Hint
+  console.log("%c⚠️ ROOT ACCESS PROTOCOL INITIATED ⚠️", "font-size: 20px; color: #ff5f56; font-weight: bold;");
+  console.log("%cType unlock() to authenticate.", "color: #7dcfff; font-style: italic; font-size: 14px;");
 
-  // 2. Define the Secret Function
-  window.enterFlag = function(attempt) {
-    // We accept either flag (Source Code or Console version)
-    const validFlags = ['PWNED{H7ML_S0urc3_C0d3_M4st3r}', 'PWNED{D3v_T00ls_H4ck3r_2026}'];
-
-    if (validFlags.includes(attempt)) {
-      // SUCCESS: Trigger the "Matrix" Surprise
-      console.log("%c[+] ACCESS GRANTED. SYSTEM OVERRIDE INITIATED...", "color: #00ff00; font-weight: bold; font-size: 20px;");
+  // 2. The Unlock Function (Triggered by typing unlock() in console)
+  window.unlock = function() {
+    // This opens a safe input box so the user doesn't get syntax errors
+    let attempt = prompt("Please enter the system flag:");
+    
+    // Check against the hidden flag
+    if (attempt === 'PWNED{H7ML_S0urc3_C0d3_M4st3r}') {
       
-      alert("🎉 ACCESS GRANTED! Welcome to the construct.");
+      // SUCCESS: Fire Confetti!
+      var duration = 3 * 1000;
+      var animationEnd = Date.now() + duration;
+      var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
 
-      // Force change all colors to Matrix Green
-      const root = document.documentElement;
-      root.style.setProperty('--bg-color', '#000000');
-      root.style.setProperty('--text-primary', '#00FF41'); /* Classic Matrix Green */
-      root.style.setProperty('--text-bright', '#00FF41');
-      root.style.setProperty('--accent-cyan', '#008F11');  /* Darker Green */
-      root.style.setProperty('--accent-purple', '#00FF41');
-      root.style.setProperty('--accent-green', '#00FF41');
-      root.style.setProperty('--border-dim', '#003B00');
-      
-      // Change font to old school terminal
-      document.body.style.fontFamily = "'Courier New', monospace";
-      document.body.style.backgroundImage = "none"; // Remove the grid
+      var interval = setInterval(function() {
+        var timeLeft = animationEnd - Date.now();
+        if (timeLeft <= 0) {
+          return clearInterval(interval);
+        }
+        var particleCount = 50 * (timeLeft / duration);
+        confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+        confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+      }, 250);
+
+      function randomInRange(min, max) { return Math.random() * (max - min) + min; }
+
+      // Success Message
+      alert("🎉 ACCESS GRANTED! \n\nYou absolute legend. I'd give you root access, but... actually, no I won't. \n\nEnjoy the confetti though!");
+      console.log("%c[+] SYSTEM UNLOCKED. CONGRATULATIONS.", "color: #00ff00; font-weight: bold; font-size: 16px;");
       
     } else {
-      // FAILURE
-      console.log("%c[-] ACCESS DENIED: Invalid Flag.", "color: #ff5f56; font-weight: bold;");
+      alert("🚫 ACCESS DENIED \n\nNice try, script kiddie.");
     }
   };
 </script>
