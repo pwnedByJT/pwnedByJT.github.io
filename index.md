@@ -65,9 +65,40 @@ title: Home
 [![Hack The Box](http://www.hackthebox.eu/badge/image/2203566)](https://app.hackthebox.com/profile/2203566)
 
 <script>
-  // This message only appears in the "Console" tab of the browser (F12)
+  // 1. Display the "Hacker" warnings in the console
   console.log("%c⚠️ SYSTEM WARNING ⚠️", "font-size: 24px; color: #ff5f56; font-weight: bold;");
   console.log("%cAccessing restricted memory...", "color: #a9b1d6; font-family: monospace;");
   console.log("%c[+] CONSOLE FLAG FOUND: PWNED{D3v_T00ls_H4ck3r_2026}", "color: #00ff00; font-family: monospace; font-weight: bold; font-size: 16px;");
-  console.log("%cGood luck with the enumeration.", "color: #7dcfff; font-style: italic;");
+  console.log("%c[?] CHALLENGE: Use function enterFlag('YOUR_FLAG') to unlock the system.", "color: #7dcfff; font-style: italic;");
+
+  // 2. Define the Secret Function
+  window.enterFlag = function(attempt) {
+    // We accept either flag (Source Code or Console version)
+    const validFlags = ['PWNED{H7ML_S0urc3_C0d3_M4st3r}', 'PWNED{D3v_T00ls_H4ck3r_2026}'];
+
+    if (validFlags.includes(attempt)) {
+      // SUCCESS: Trigger the "Matrix" Surprise
+      console.log("%c[+] ACCESS GRANTED. SYSTEM OVERRIDE INITIATED...", "color: #00ff00; font-weight: bold; font-size: 20px;");
+      
+      alert("🎉 ACCESS GRANTED! Welcome to the construct.");
+
+      // Force change all colors to Matrix Green
+      const root = document.documentElement;
+      root.style.setProperty('--bg-color', '#000000');
+      root.style.setProperty('--text-primary', '#00FF41'); /* Classic Matrix Green */
+      root.style.setProperty('--text-bright', '#00FF41');
+      root.style.setProperty('--accent-cyan', '#008F11');  /* Darker Green */
+      root.style.setProperty('--accent-purple', '#00FF41');
+      root.style.setProperty('--accent-green', '#00FF41');
+      root.style.setProperty('--border-dim', '#003B00');
+      
+      // Change font to old school terminal
+      document.body.style.fontFamily = "'Courier New', monospace";
+      document.body.style.backgroundImage = "none"; // Remove the grid
+      
+    } else {
+      // FAILURE
+      console.log("%c[-] ACCESS DENIED: Invalid Flag.", "color: #ff5f56; font-weight: bold;");
+    }
+  };
 </script>
