@@ -32,8 +32,8 @@ title: Home
 **CompTIA**<br>
 [![CompTIA PenTest+](https://img.shields.io/badge/CompTIA-PenTest+-ff5555?style=for-the-badge&logo=comptia&logoColor=white)](https://www.credly.com/badges/71494342-7ae1-44c3-8d5f-a41543060868)
 [![CompTIA Security+](https://img.shields.io/badge/CompTIA-Security+-ff5555?style=for-the-badge&logo=comptia&logoColor=white)](https://www.credly.com/badges/bdfa7897-7892-4dfd-b29f-f9c12498f058/public_url)
-[![CompTIA Network+](https://img.shields.io/badge/CompTIA-Network+-0077C8?style=for-the-badge&logo=comptia&logoColor=white)](https://www.credly.com/badges/794a9032-0e1f-4b3b-8a33-739bf8eaeb0c/public_url)
-[![CompTIA A+](https://img.shields.io/badge/CompTIA-A+-0077C8?style=for-the-badge&logo=comptia&logoColor=white)](https://www.credly.com/badges/51f607b1-440b-43fd-8f82-47eb07de5e8a/public_url)
+[![CompTIA Network+](https://img.shields.io/badge/CompTIA-Network+-ff5555?style=for-the-badge&logo=comptia&logoColor=white)](https://www.credly.com/badges/794a9032-0e1f-4b3b-8a33-739bf8eaeb0c/public_url)
+[![CompTIA A+](https://img.shields.io/badge/CompTIA-A+-ff5555?style=for-the-badge&logo=comptia&logoColor=white)](https://www.credly.com/badges/51f607b1-440b-43fd-8f82-47eb07de5e8a/public_url)
 
 **Microsoft**<br>
 [![Azure Fundamentals](https://img.shields.io/badge/Microsoft-Azure_Fund-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)](https://www.credly.com/badges/b05ff049-5b67-4d36-95e6-f2108c0eecd6/public_url)
