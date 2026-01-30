@@ -45,6 +45,10 @@ title: Home
 [![SC-900](https://img.shields.io/badge/Microsoft-Security_Fund-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)](https://www.credly.com/badges/7795d30e-7866-4e20-90b9-2436b06354ea/public_url)
 
 <br>
+**TryHackMe**<br>
+[![TryHackMe SEC1](https://img.shields.io/badge/TryHackMe-SEC1-47c1bf?style=for-the-badge&logo=tryhackme&logoColor=white)](https://www.credly.com/badges/359b195a-1131-470e-bc85-16a1ba2f2727/public_url)
+
+<br>
 
 ### [ MODULE :: ARSENAL ]
 **Offensive Tools**<br>
