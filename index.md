@@ -67,12 +67,16 @@ title: Home
 
 <br><br>
 
-<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6061905" style='border:none; width:100%; height:220px;'></iframe>
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; width: 100%;">
+  
+  <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6061905" 
+          style='border:none; width:100%; max-width: 600px; height:240px;'>
+  </iframe>
 
-<div align="center" style="margin-top: 15px;">
   <a href="https://app.hackthebox.com/profile/2203566">
     <img src="https://www.hackthebox.eu/badge/image/2203566" alt="Hack The Box Rank" style="border-radius: 5px; box-shadow: 0 0 15px rgba(0,0,0,0.5);">
   </a>
+
 </div>
 
 <script>
