@@ -70,11 +70,13 @@ title: Home
 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
   
   <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6061905" 
-          style='border:none; width:450px; height:240px; overflow:hidden;'>
+          style='border:none; width:100%; max-width: 450px; height:240px; overflow:hidden;'>
   </iframe>
 
   <a href="https://app.hackthebox.com/profile/2203566">
-    <img src="https://www.hackthebox.eu/badge/image/2203566" alt="Hack The Box Rank" style='border:none; width:450px; height:240px; overflow:hidden;'>
+    <img src="https://www.hackthebox.eu/badge/image/2203566" 
+         alt="Hack The Box Rank" 
+         style="border-radius: 5px;"> 
   </a>
 
 </div>
