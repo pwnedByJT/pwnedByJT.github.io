@@ -76,7 +76,7 @@ title: Home
   <a href="https://app.hackthebox.com/profile/2203566">
     <img src="https://www.hackthebox.eu/badge/image/2203566" 
          alt="Hack The Box Rank" 
-         style="border-radius: 5px;"> 
+         style="border-radius: 5px; box-shadow: 0 0 15px rgba(0,0,0,0.5);"> 
   </a>
 
 </div>
