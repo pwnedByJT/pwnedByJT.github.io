@@ -61,37 +61,45 @@ title: Home
 <br>
 
 ### [ MODULE :: UPLINK ]
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/justin-turner-3b41031b8/)
-[![GitHub](https://img.shields.io/badge/GitHub-View_Code-181717?style=for-the-badge&logo=github)](https://github.com/pwnedByJT)
-[![Resume](https://img.shields.io/badge/Resume-Download_PDF-FF0000?style=for-the-badge&logo=adobeacrobatreader)](/Justin_Turner_Resume.pdf)
 
-<br><br>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: stretch;">
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-  
-  <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6061905" 
-          style='border:none; width:100%; max-width: 450px; height:240px; overflow:hidden;'>
-  </iframe>
+  <div style="flex: 1 1 400px; min-width: 300px;">
+    <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6061905" 
+            style='border:none; width:100%; height:240px; overflow:hidden; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);'>
+    </iframe>
+  </div>
 
-  <div style="width: 100%; max-width: 450px; height: 240px; background: #1a1b26; border: 1px solid #2f354b; border-radius: 8px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+  <div style="flex: 1 1 400px; min-width: 300px; background: #1a1b26; border: 1px solid #2f354b; border-radius: 8px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
     
-    <div style="margin-bottom: 15px; text-align: center;">
-      <span style="color: #9fef00; font-family: monospace; font-weight: bold;">[ HTB :: STATUS ]</span>
+    <div style="border-bottom: 1px solid #2f354b; padding-bottom: 10px; margin-bottom: 15px;">
+      <span style="color: #7dcfff; font-family: monospace; font-weight: bold;">[ ACTIVE_CHANNELS ]</span>
     </div>
 
-    <a href="https://app.hackthebox.com/profile/2203566">
-      <img src="https://www.hackthebox.eu/badge/image/2203566" 
-           alt="Hack The Box Rank" 
-           style="border-radius: 4px; box-shadow: 0 0 10px rgba(159, 239, 0, 0.2);"> 
-    </a>
-    
-    <div style="margin-top: 15px;">
-       <span style="color: #565f89; font-size: 0.8em;">> connect_vpn: <span style="color: #9fef00;">ONLINE</span></span>
-    </div>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-around; gap: 15px; height: 100%;">
+      
+      <a href="https://app.hackthebox.com/profile/2203566">
+        <img src="https://www.hackthebox.eu/badge/image/2203566" alt="Hack The Box Rank" style="border-radius: 4px; box-shadow: 0 0 10px rgba(159, 239, 0, 0.2);">
+      </a>
 
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="https://www.linkedin.com/in/justin-turner-3b41031b8/" style="text-decoration: none;">
+          <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/pwnedByJT" style="text-decoration: none;">
+          <img src="https://img.shields.io/badge/GitHub-View_Code-181717?style=for-the-badge&logo=github" alt="GitHub">
+        </a>
+        <a href="/Justin_Turner_Resume.pdf" style="text-decoration: none;">
+          <img src="https://img.shields.io/badge/Resume-PDF-FF0000?style=for-the-badge&logo=adobeacrobatreader" alt="Resume">
+        </a>
+      </div>
+
+    </div>
   </div>
 
 </div>
+
+<br><br>
 
 <script>
 // System Initialization
