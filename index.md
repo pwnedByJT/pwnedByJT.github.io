@@ -62,37 +62,44 @@ title: Home
 
 ### [ MODULE :: UPLINK ]
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: stretch;">
+<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch;">
 
-  <div style="flex: 1 1 400px; min-width: 300px;">
+  <div style="flex: 2; min-width: 300px; background: #1a1b26; border: 1px solid #2f354b; border-radius: 8px; padding: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+    <div style="margin-bottom: 5px; border-bottom: 1px solid #2f354b; padding-bottom: 5px;">
+      <span style="color: #bb9af7; font-size: 10px; font-family: monospace;">> EXECUTING: THM_API_FETCH...</span>
+    </div>
     <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6061905" 
-            style='border:none; width:100%; height:240px; overflow:hidden; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);'>
+            style='border:none; width:100%; height:240px; overflow:hidden;'>
     </iframe>
   </div>
 
-  <div style="flex: 1 1 400px; min-width: 300px; background: #1a1b26; border: 1px solid #2f354b; border-radius: 8px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+  <div style="flex: 1; min-width: 250px; display: flex; flex-direction: column; gap: 15px;">
     
-    <div style="border-bottom: 1px solid #2f354b; padding-bottom: 10px; margin-bottom: 15px;">
-      <span style="color: #7dcfff; font-family: monospace; font-weight: bold;">[ ACTIVE_CHANNELS ]</span>
+    <div style="background: #1a1b26; border: 1px solid #2f354b; border-radius: 8px; padding: 15px; display: flex; justify-content: center; align-items: center; flex: 1; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+      <a href="https://app.hackthebox.com/profile/2203566">
+        <img src="https://www.hackthebox.eu/badge/image/2203566" alt="Hack The Box Rank" style="max-width: 100%; height: auto; border-radius: 4px;">
+      </a>
     </div>
 
-    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-around; gap: 15px; height: 100%;">
+    <div style="background: #1a1b26; border: 1px solid #2f354b; border-radius: 8px; padding: 15px; display: flex; flex-direction: column; justify-content: center; gap: 10px; flex: 1; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
       
-      <a href="https://app.hackthebox.com/profile/2203566">
-        <img src="https://www.hackthebox.eu/badge/image/2203566" alt="Hack The Box Rank" style="border-radius: 4px; box-shadow: 0 0 10px rgba(159, 239, 0, 0.2);">
+      <a href="https://www.linkedin.com/in/justin-turner-3b41031b8/" style="text-decoration: none;">
+        <div style="background: #0077B5; color: white; padding: 8px; text-align: center; border-radius: 4px; font-family: sans-serif; font-size: 14px; font-weight: bold; border: 1px solid rgba(255,255,255,0.2);">
+          <i class="fab fa-linkedin"></i> LINKEDIN
+        </div>
       </a>
 
-      <div style="display: flex; flex-direction: column; gap: 10px;">
-        <a href="https://www.linkedin.com/in/justin-turner-3b41031b8/" style="text-decoration: none;">
-          <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin" alt="LinkedIn">
-        </a>
-        <a href="https://github.com/pwnedByJT" style="text-decoration: none;">
-          <img src="https://img.shields.io/badge/GitHub-View_Code-181717?style=for-the-badge&logo=github" alt="GitHub">
-        </a>
-        <a href="/Justin_Turner_Resume.pdf" style="text-decoration: none;">
-          <img src="https://img.shields.io/badge/Resume-PDF-FF0000?style=for-the-badge&logo=adobeacrobatreader" alt="Resume">
-        </a>
-      </div>
+      <a href="https://github.com/pwnedByJT" style="text-decoration: none;">
+        <div style="background: #24292e; color: white; padding: 8px; text-align: center; border-radius: 4px; font-family: sans-serif; font-size: 14px; font-weight: bold; border: 1px solid rgba(255,255,255,0.2);">
+          <i class="fab fa-github"></i> GITHUB
+        </div>
+      </a>
+
+      <a href="/Justin_Turner_Resume.pdf" style="text-decoration: none;">
+        <div style="background: #cf3737; color: white; padding: 8px; text-align: center; border-radius: 4px; font-family: sans-serif; font-size: 14px; font-weight: bold; border: 1px solid rgba(255,255,255,0.2);">
+          <i class="fas fa-file-pdf"></i> RESUME
+        </div>
+      </a>
 
     </div>
   </div>
