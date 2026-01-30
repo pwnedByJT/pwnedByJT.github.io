@@ -67,17 +67,29 @@ title: Home
 
 <br><br>
 
-<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
   
   <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6061905" 
           style='border:none; width:100%; max-width: 450px; height:240px; overflow:hidden;'>
   </iframe>
 
-  <a href="https://app.hackthebox.com/profile/2203566">
-    <img src="https://www.hackthebox.eu/badge/image/2203566" 
-         alt="Hack The Box Rank" 
-         style="border-radius: 5px; box-shadow: 0 0 15px rgba(0,0,0,0.5);"> 
-  </a>
+  <div style="width: 100%; max-width: 450px; height: 240px; background: #1a1b26; border: 1px solid #2f354b; border-radius: 8px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+    
+    <div style="margin-bottom: 15px; text-align: center;">
+      <span style="color: #9fef00; font-family: monospace; font-weight: bold;">[ HTB :: STATUS ]</span>
+    </div>
+
+    <a href="https://app.hackthebox.com/profile/2203566">
+      <img src="https://www.hackthebox.eu/badge/image/2203566" 
+           alt="Hack The Box Rank" 
+           style="border-radius: 4px; box-shadow: 0 0 10px rgba(159, 239, 0, 0.2);"> 
+    </a>
+    
+    <div style="margin-top: 15px;">
+       <span style="color: #565f89; font-size: 0.8em;">> connect_vpn: <span style="color: #9fef00;">ONLINE</span></span>
+    </div>
+
+  </div>
 
 </div>
 
